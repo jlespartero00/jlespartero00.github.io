@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -88,17 +91,12 @@ footer {
 
 
 .trainer-img {
-    max-width: 150px; /* Ensure images are a maximum of 150px */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 150px; 
+    height: 150px;     
     border-radius: 50%; 
     margin: 0 auto;  
 }
 
-/* ============================= */
-/*        Responsive Styles      */
-/* ============================= */
-
-/* Extra padding and alignment for hero on small screens */
 @media (max-width: 768px) {
     .hero-section {
         height: auto;
@@ -142,7 +140,6 @@ footer {
     }
 }
 
-/* Smaller screens: phones */
 @media (max-width: 576px) {
     .caption-glass h1 {
         font-size: 1.5rem;
@@ -166,4 +163,72 @@ footer {
         text-align: center;
         font-size: 0.9rem;
     }
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #5995d4ee;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 91, 187, 0.3);
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    box-shadow: 0 6px 12px rgba(23, 162, 184, 0.3);
+}
+
+.btn:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.5);
+    outline-offset: 2px;
+}
+
+
+.carousel-caption .btn {
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+footer i {
+  transition: transform 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  color: #0dcaf0;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  hr {
+    align-self: center;
+  }
 }
